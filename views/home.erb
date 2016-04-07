@@ -1,0 +1,8 @@
+<h1>Alvaro's awesome blog</h1>
+
+<a href="/new_post">Create a new post</a>
+<ul style="list-style-type:none">
+<% @posts.each_with_index do |post, i| %>
+	<h2><a href="/post_details/<%= i %>"> <%= post.title %></a></h2>
+<%end%>
+</ul>

@@ -1,0 +1,9 @@
+<h1>Alvaro's awesome blog</h1>
+<ul>
+<h2><%= @the_post.title %></h2>
+<p><%= @the_post.date.strftime("%B %d, %Y")%></p>
+<p>By: <%= @the_post.author %></p>
+<p>Category: <%= @the_post.category %></p>
+<p><%= @the_post.text %></p>
+<p><a href="/">Go back to Home</a>
+</ul>
